@@ -1,0 +1,68 @@
+
+@font-face {
+    -fx-font-family: 'Comfortaa';
+    src: url("/fonts/Comfortaa-VariableFont_wght.ttf");
+}
+
+.shadow{
+    -fx-effect: dropshadow( gaussian , rgba(0, 0, 0, 0.25), 0, 0 , 0, 9);
+}
+
+.header-text-theme{
+    -fx-font-family: "Comfortaa";
+    -fx-font-size: 40;
+    -fx-fill: #FFEC5C;
+}
+
+.main-theme {
+    -fx-background-color: radial-gradient(focus-distance 0% , center 50% 50% , radius 50% , #c96850, #950376);
+}
+.my-button{
+    -fx-border-radius: 30;
+    -fx-background-radius: 40;
+    -fx-background-color: #FFF778;
+    -fx-border-color: #FFBF00;
+    -fx-font-family: "Comfortaa";
+    -fx-effect: dropshadow( gaussian ,rgba(0, 0, 0, 0.25) , 0, 0 , 0, 9);
+}
+#startBtn{
+    -fx-border-width: 10;
+    -fx-font-size: 32;
+}
+#startBtn:hover{
+    -fx-background-color: #FFEB3B;
+}
+#startBtn:pressed{
+    -fx-background-color: #FFF778;
+    -fx-border-color: #FFF778;
+
+}
+#inputName{
+    -fx-font-family: "Comfortaa";
+    -fx-font-size: 18;
+}
+#nextBtn{
+    -fx-background-color: #FFEB3B;
+    -fx-border-width: 8;
+    -fx-font-size: 20;
+}
+#nextBtn:hover{
+    -fx-background-color: #FFEB3B;
+    -fx-border-color: #FFEB3B;
+}
+#nextBtn:pressed{
+    -fx-background-color: #FFBF00;
+    -fx-border-color: #FFBF00;
+}
+.place-num-text{
+    -fx-font-family: "Comfortaa";
+    -fx-font-size: 50;
+    -fx-fill: #FF482F;
+}
+
+
+
+
+
+
+

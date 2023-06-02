@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane styleClass="main-theme"
+            stylesheets="@../css/project.css"
+            xmlns="http://javafx.com/javafx/8"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="ru.kpfu.itis.controllers.ResultController">
+    <children>
+        <VBox alignment="CENTER"
+              AnchorPane.bottomAnchor="0.0"
+              AnchorPane.leftAnchor="0.0"
+              AnchorPane.rightAnchor="0.0"
+              AnchorPane.topAnchor="0.0">
+
+            <Text strokeType="OUTSIDE"
+                  strokeWidth="0.0"
+                  styleClass="header-text-theme"
+                  text="Результаты"
+                  textAlignment="CENTER"
+                  wrappingWidth="500.0">
+                <VBox.margin>
+                   <Insets bottom="30.0"
+                           left="50.0"
+                           right="50.0"
+                           top="40.0" />
+                </VBox.margin>
+            </Text>
+
+
+            <HBox maxWidth="-Infinity">
+                <BorderPane prefHeight="80.0"
+                            prefWidth="80.0"
+                            style="-fx-background-color: FEF9C7;">
+                    <center>
+                        <Text strokeType="OUTSIDE"
+                              strokeWidth="0.0"
+                              styleClass="place-num-text"
+                              text="1"
+                              textAlignment="CENTER"
+                              wrappingWidth="37.734375" />
+                    </center>
+                   <HBox.margin>
+                      <Insets bottom="10.0"
+                              left="20.0"
+                              right="10.0"
+                              top="10.0" />
+                   </HBox.margin>
+                </BorderPane>
+                <BorderPane prefHeight="80.0"
+                            prefWidth="550.0"
+                            style="-fx-background-color: FEF9C7;">
+                    <center>
+                        <Text fx:id="namePlayer1"
+                              strokeType="OUTSIDE"
+                              strokeWidth="0.0"
+                              style="-fx-fill: #000000;"
+                              styleClass="header-text-theme"
+                              text="Игрок 1"
+                              wrappingWidth="526.388671875" />
+                    </center>
+                   <HBox.margin>
+                      <Insets bottom="10.0"
+                              left="10.0"
+                              right="10.0"
+                              top="10.0" />
+                   </HBox.margin>
+                </BorderPane>
+                <BorderPane prefHeight="80.0"
+                            prefWidth="100.0"
+                            style="-fx-background-color: FEF9C7;">
+                    <center>
+                        <Text fx:id="firstPlacePoints"
+                              strokeType="OUTSIDE"
+                              strokeWidth="0.0"
+                              style="-fx-fill: #000000;"
+                              styleClass="header-text-theme"
+                              text="3" textAlignment="CENTER"
+                              wrappingWidth="99.46875" />
+                    </center>
+                   <HBox.margin>
+                      <Insets bottom="10.0"
+                              left="10.0"
+                              right="20.0"
+                              top="10.0" />
+                   </HBox.margin>
+                </BorderPane>
+                <VBox.margin>
+                   <Insets bottom="20.0" />
+                </VBox.margin>
+            </HBox>
+
+            <HBox maxWidth="-Infinity">
+                <BorderPane prefHeight="80.0"
+                            prefWidth="80.0"
+                            style="-fx-background-color: FEF9C7;">
+                    <center>
+                        <Text strokeType="OUTSIDE"
+                              strokeWidth="0.0"
+                              styleClass="place-num-text"
+                              text="2"
+                              textAlignment="CENTER" />
+                    </center>
+                    <HBox.margin>
+                        <Insets bottom="10.0"
+                                left="20.0"
+                                right="10.0"
+                                top="10.0" />
+                    </HBox.margin>
+                </BorderPane>
+                <BorderPane prefHeight="80.0"
+                            prefWidth="550.0"
+                            style="-fx-background-color: FEF9C7;">
+                    <center>
+                        <Text fx:id="namePlayer2"
+                              strokeType="OUTSIDE"
+                              strokeWidth="0.0"
+                              style="-fx-fill: #000000;"
+                              styleClass="header-text-theme"
+                              text="Игрок 2"
+                              wrappingWidth="526.388671875" />
+                    </center>
+                    <HBox.margin>
+                        <Insets bottom="10.0"
+                                left="10.0"
+                                right="10.0"
+                                top="10.0" />
+                    </HBox.margin>
+                </BorderPane>
+                <BorderPane prefHeight="80.0"
+                            prefWidth="100.0"
+                            style="-fx-background-color: FEF9C7;">
+                    <center>
+                        <Text fx:id="secondPlacePoints"
+                              strokeType="OUTSIDE"
+                              strokeWidth="0.0"
+                              style="-fx-fill: #000000;"
+                              styleClass="header-text-theme"
+                              text="2"
+                              textAlignment="CENTER"
+                              wrappingWidth="99.46875" />
+                    </center>
+                    <HBox.margin>
+                        <Insets bottom="10.0"
+                                left="10.0"
+                                right="20.0"
+                                top="10.0" />
+                    </HBox.margin>
+                </BorderPane>
+                <VBox.margin>
+                    <Insets bottom="20.0" />
+                </VBox.margin>
+            </HBox>
+
+            <HBox maxWidth="-Infinity">
+                <BorderPane prefHeight="80.0"
+                            prefWidth="80.0"
+                            style="-fx-background-color: FEF9C7;">
+                    <center>
+                        <Text strokeType="OUTSIDE"
+                              strokeWidth="0.0"
+                              styleClass="place-num-text"
+                              text="3"
+                              textAlignment="CENTER" />
+                    </center>
+                    <HBox.margin>
+                        <Insets bottom="10.0"
+                                left="20.0"
+                                right="10.0"
+                                top="10.0" />
+                    </HBox.margin>
+                </BorderPane>
+
+
+                <BorderPane prefHeight="80.0"
+                            prefWidth="550.0"
+                            style="-fx-background-color: FEF9C7;">
+                    <center>
+                        <Text fx:id="namePlayer3"
+                              strokeType="OUTSIDE"
+                              strokeWidth="0.0"
+                              style="-fx-fill: #000000;"
+                              styleClass="header-text-theme"
+                              text="Игрок 3"
+                              wrappingWidth="526.388671875" />
+                    </center>
+                    <HBox.margin>
+                        <Insets bottom="10.0"
+                                left="10.0"
+                                right="10.0"
+                                top="10.0" />
+                    </HBox.margin>
+                </BorderPane>
+
+
+                <BorderPane prefHeight="80.0"
+                            prefWidth="100.0"
+                            style="-fx-background-color: FEF9C7;">
+                    <center>
+                        <Text fx:id="thirdPlacePoints"
+                              strokeType="OUTSIDE"
+                              strokeWidth="0.0"
+                              style="-fx-fill: #000000;"
+                              styleClass="header-text-theme"
+                              text="1" textAlignment="CENTER"
+                              wrappingWidth="99.46875" />
+                    </center>
+                    <HBox.margin>
+                        <Insets bottom="10.0"
+                                left="10.0"
+                                right="20.0"
+                                top="10.0" />
+                    </HBox.margin>
+                </BorderPane>
+                <VBox.margin>
+                    <Insets bottom="20.0" />
+                </VBox.margin>
+            </HBox>
+
+
+
+<!--            <Button id="nextBtn"-->
+<!--                    onAction="#goToStartClicked"-->
+<!--                    mnemonicParsing="false"-->
+<!--                    prefHeight="40.0"-->
+<!--                    prefWidth="250.0"-->
+<!--                    styleClass="my-button"-->
+<!--                    text="Главное меню">-->
+<!--            <VBox.margin>-->
+<!--               <Insets bottom="40.0"-->
+<!--                       top="30.0" />-->
+<!--            </VBox.margin></Button>-->
+
+        </VBox>
+    </children>
+
+</AnchorPane>
+

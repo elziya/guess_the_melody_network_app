@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="answerPanel" prefHeight="500.0" prefWidth="700.0" styleClass="answer-content-pane-border" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="ru.kpfu.itis.controllers.AnswerController">
+  <BorderPane fx:id="backgroundPane" prefHeight="500.0" prefWidth="700.0">
+    <center>
+      <Pane styleClass="answer-content-pane">
+        <VBox layoutX="14.0" layoutY="24.0" prefHeight="432.0" prefWidth="642.0">
+          <BorderPane minHeight="72.0">
+            <right>
+              <GridPane prefWidth="150.0">
+                <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="0" GridPane.rowIndex="0">
+                  <center>
+                    <Text id="minute" fx:id="tvMinute" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="answer-time-text" text="MM">
+                      <fill>
+                        <Color blue="0.700" green="0.400" red="1.000" fx:id="x1" />
+                      </fill>
+                      <font>
+                        <Font size="36.0" fx:id="x2" />
+                      </font>
+                    </Text>
+                  </center>
+                </BorderPane>
+                <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="0">
+                  <center>
+                    <Text id="second" fx:id="tvSecond" fill="$x1" font="$x2" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="answer-time-text" text="CC" />
+                  </center>
+                </BorderPane>
+                <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="0">
+                  <center>
+                    <Text fill="$x1" font="$x2" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="answer-time-text" text=":" />
+                  </center>
+                </BorderPane>
+                <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="99.0" minWidth="10.0" percentWidth="45.0" prefWidth="77.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="88.4" minWidth="10.0" prefWidth="34.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="104.0" minWidth="50.0" percentWidth="45.0" prefWidth="104.0" />
+                </columnConstraints>
+                <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                </rowConstraints>
+                <BorderPane.margin>
+                  <Insets right="30.0" />
+                </BorderPane.margin>
+              </GridPane>
+            </right>
+          </BorderPane>
+          <BorderPane prefHeight="200.0" prefWidth="200.0">
+            <center>
+              <Text fill="#ff00b8" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="answer-title-text" text="Введите ответ" textAlignment="CENTER">
+                <font>
+                  <Font size="48.0" />
+                </font>
+              </Text>
+            </center>
+          </BorderPane>
+          <BorderPane minHeight="150.0" prefWidth="200.0">
+            <center>
+              <Pane maxHeight="90.0" maxWidth="500.0" styleClass="content-pane-border">
+                <BorderPane layoutX="14.0" layoutY="14.0" prefHeight="62.0" prefWidth="472.0">
+                  <center>
+                    <TextField fx:id="etAnswer" alignment="CENTER" prefHeight="63.84375" prefWidth="472.0" styleClass="content-pane" />
+                  </center>
+                </BorderPane>
+              </Pane>
+            </center>
+          </BorderPane>
+          <BorderPane prefHeight="200.0" prefWidth="200.0">
+            <top>
+              <Pane maxWidth="360.0" prefHeight="60.0" styleClass="button-background" BorderPane.alignment="TOP_CENTER">
+                <BorderPane layoutX="14.0" layoutY="8.0" prefHeight="44.0" prefWidth="332.0">
+                  <center>
+                    <Button fx:id="btnSend" contentDisplay="CENTER" mnemonicParsing="false" onAction="#sendAnswer" prefHeight="42.0" prefWidth="360.0" styleClass="button-content" text="Отправить" textAlignment="CENTER" BorderPane.alignment="CENTER">
+                      <BorderPane.margin>
+                        <Insets />
+                      </BorderPane.margin>
+                    </Button>
+                  </center>
+                </BorderPane>
+              </Pane>
+            </top>
+          </BorderPane>
+        </VBox>
+        <BorderPane.margin>
+          <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+        </BorderPane.margin>
+      </Pane>
+    </center>
+  </BorderPane>
+  <stylesheets>
+    <URL value="@../css/style.css" />
+  </stylesheets>
+</AnchorPane>
+

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane
+        fx:id="anchorPane"
+        styleClass="main-theme"
+        stylesheets="@../css/project.css"
+        xmlns="http://javafx.com/javafx/8"
+        xmlns:fx="http://javafx.com/fxml/1"
+        fx:controller="ru.kpfu.itis.controllers.StartController">
+
+   <children>
+      <VBox alignment="CENTER"
+            AnchorPane.bottomAnchor="0.0"
+            AnchorPane.leftAnchor="0.0"
+            AnchorPane.rightAnchor="0.0"
+            AnchorPane.topAnchor="0.0">
+         <Button id="startBtn"
+                 onAction="#startBtnClicked"
+                 alignment="CENTER"
+                 maxHeight="200.0"
+                 maxWidth="400.0"
+                 minHeight="-Infinity"
+                 minWidth="-Infinity"
+                 mnemonicParsing="false"
+                 prefHeight="120.0"
+                 prefWidth="310.0"
+                 styleClass="my-button"
+                 text="Начать игру">
+         </Button>
+      </VBox>
+   </children>
+
+</AnchorPane>
+

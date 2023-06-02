@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="mainScene" minHeight="700.0" minWidth="1000.0" styleClass="main-scene" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="ru.kpfu.itis.controllers.MainController">
+  <VBox alignment="TOP_CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+    <HBox alignment="TOP_CENTER" minHeight="480.0" VBox.vgrow="NEVER">
+      <children>
+        <BorderPane prefHeight="200.0" prefWidth="200.0" HBox.hgrow="NEVER">
+          <center>
+            <ImageView fitHeight="400.0" fitWidth="340.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+              <image>
+                <Image url="@../images/presenter_gtm.png" />
+              </image>
+              <BorderPane.margin>
+                <Insets top="20.0" />
+              </BorderPane.margin>
+            </ImageView>
+          </center>
+        </BorderPane>
+        <BorderPane fx:id="musicStagePane" minWidth="640.0" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+          <center>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" styleClass="content-pane-border">
+              <center>
+                <BorderPane prefHeight="200.0" prefWidth="200.0" styleClass="content-pane">
+                  <top>
+                    <GridPane alignment="CENTER" hgap="2.0" minHeight="420.0" minWidth="600.0" prefWidth="0.0" styleClass="screen-text-note" vgap="10.0">
+                      <children>
+                        <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="0" GridPane.vgrow="NEVER">
+                          <bottom>
+                            <Text id="score00" fx:id="points00" strokeType="OUTSIDE" strokeWidth="0.0" text="100" BorderPane.alignment="CENTER" />
+                          </bottom>
+                          <center>
+                            <ImageView id="note" fx:id="note00" fitHeight="76.0" fitWidth="72.0" onMouseClicked="#chooseNote" pickOnBounds="true" preserveRatio="true" styleClass="cursor-type-hand">
+                              <image>
+                                <Image url="@../images/note.png" />
+                              </image>
+                            </ImageView>
+                          </center>
+                          <GridPane.margin>
+                            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                          </GridPane.margin>
+                        </BorderPane>
+                        <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.hgrow="ALWAYS" GridPane.rowIndex="0" GridPane.vgrow="NEVER">
+                          <bottom>
+                            <Text fx:id="points01" strokeType="OUTSIDE" strokeWidth="0.0" text="200" BorderPane.alignment="CENTER" />
+                          </bottom>
+                          <center>
+                            <ImageView id="note" fx:id="note01" fitHeight="76.0" fitWidth="72.0" onMouseClicked="#chooseNote" pickOnBounds="true" preserveRatio="true" styleClass="cursor-type-hand">
+                              <image>
+                                <Image url="@../images/note.png" />
+                              </image>
+                            </ImageView>
+                          </center>
+                        </BorderPane>
+                        <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.hgrow="ALWAYS" GridPane.rowIndex="0" GridPane.vgrow="NEVER">
+                          <bottom>
+                            <Text fx:id="points02" strokeType="OUTSIDE" strokeWidth="0.0" text="300" BorderPane.alignment="CENTER" />
+                          </bottom>
+                          <center>
+                            <ImageView id="note13" fx:id="note02" fitHeight="76.0" fitWidth="72.0" onMouseClicked="#chooseNote" pickOnBounds="true" preserveRatio="true" styleClass="cursor-type-hand">
+                              <image>
+                                <Image url="@../images/note.png" />
+                              </image>
+                            </ImageView>
+                          </center>
+                        </BorderPane>
+                        <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.hgrow="ALWAYS" GridPane.rowIndex="0" GridPane.vgrow="NEVER">
+                          <bottom>
+                            <Text fx:id="points03" strokeType="OUTSIDE" strokeWidth="0.0" text="400" BorderPane.alignment="CENTER" />
+                          </bottom>
+                          <center>
+                            <ImageView fx:id="note03" fitHeight="76.0" fitWidth="72.0" onMouseClicked="#chooseNote" pickOnBounds="true" preserveRatio="true" styleClass="cursor-type-hand">
+                              <image>
+                                <Image url="@../images/note.png" />
+                              </image>
+                            </ImageView>
+                          </center>
+                        </BorderPane>
+                        <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                          <bottom>
+                            <Text fx:id="points10" strokeType="OUTSIDE" strokeWidth="0.0" text="100" BorderPane.alignment="CENTER" />
+                          </bottom>
+                          <center>
+                            <ImageView fx:id="note10" fitHeight="76.0" fitWidth="72.0" onMouseClicked="#chooseNote" pickOnBounds="true" preserveRatio="true" styleClass="cursor-type-hand">
+                              <image>
+                                <Image url="@../images/note.png" />
+                              </image>
+                            </ImageView>
+                          </center>
+                        </BorderPane>
+                        <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                          <bottom>
+                            <Text fx:id="points11" strokeType="OUTSIDE" strokeWidth="0.0" text="200" BorderPane.alignment="CENTER" />
+                          </bottom>
+                          <center>
+                            <ImageView fx:id="note11" fitHeight="76.0" fitWidth="72.0" onMouseClicked="#chooseNote" pickOnBounds="true" preserveRatio="true" styleClass="cursor-type-hand">
+                              <image>
+                                <Image url="@../images/note.png" />
+                              </image>
+                            </ImageView>
+                          </center>
+                        </BorderPane>
+                        <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                          <bottom>
+                            <Text fx:id="points12" strokeType="OUTSIDE" strokeWidth="0.0" text="300" BorderPane.alignment="CENTER" />
+                          </bottom>
+                          <center>
+                            <ImageView fx:id="note12" fitHeight="76.0" fitWidth="72.0" onMouseClicked="#chooseNote" pickOnBounds="true" preserveRatio="true" styleClass="cursor-type-hand">
+                              <image>
+                                <Image url="@../images/note.png" />
+                              </image>
+                            </ImageView>
+                          </center>
+                        </BorderPane>
+                        <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                          <bottom>
+                            <Text fx:id="points13" strokeType="OUTSIDE" strokeWidth="0.0" text="400" BorderPane.alignment="CENTER" />
+                          </bottom>
+                          <center>
+                            <ImageView fx:id="note13" fitHeight="76.0" fitWidth="72.0" onMouseClicked="#chooseNote" pickOnBounds="true" preserveRatio="true" styleClass="cursor-type-hand">
+                              <image>
+                                <Image url="@../images/note.png" />
+                              </image>
+                            </ImageView>
+                          </center>
+                        </BorderPane>
+                        <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                          <bottom>
+                            <Text fx:id="points20" strokeType="OUTSIDE" strokeWidth="0.0" text="100" BorderPane.alignment="CENTER" />
+                          </bottom>
+                          <center>
+                            <ImageView fx:id="note20" fitHeight="76.0" fitWidth="72.0" onMouseClicked="#chooseNote" pickOnBounds="true" preserveRatio="true" styleClass="cursor-type-hand">
+                              <image>
+                                <Image url="@../images/note.png" />
+                              </image>
+                            </ImageView>
+                          </center>
+                        </BorderPane>
+                        <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                          <bottom>
+                            <Text fx:id="points21" strokeType="OUTSIDE" strokeWidth="0.0" text="200" BorderPane.alignment="CENTER" />
+                          </bottom>
+                          <center>
+                            <ImageView fx:id="note21" fitHeight="76.0" fitWidth="72.0" onMouseClicked="#chooseNote" pickOnBounds="true" preserveRatio="true" styleClass="cursor-type-hand">
+                              <image>
+                                <Image url="@../images/note.png" />
+                              </image>
+                            </ImageView>
+                          </center>
+                        </BorderPane>
+                        <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                          <bottom>
+                            <Text fx:id="points22" strokeType="OUTSIDE" strokeWidth="0.0" text="300" BorderPane.alignment="CENTER" />
+                          </bottom>
+                          <center>
+                            <ImageView fx:id="note22" fitHeight="76.0" fitWidth="72.0" onMouseClicked="#chooseNote" pickOnBounds="true" preserveRatio="true" styleClass="cursor-type-hand">
+                              <image>
+                                <Image url="@../images/note.png" />
+                              </image>
+                            </ImageView>
+                          </center>
+                        </BorderPane>
+                        <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                          <bottom>
+                            <Text fx:id="points23" strokeType="OUTSIDE" strokeWidth="0.0" text="400" BorderPane.alignment="CENTER" />
+                          </bottom>
+                          <center>
+                            <ImageView fx:id="note23" fitHeight="76.0" fitWidth="76.0" onMouseClicked="#chooseNote" pickOnBounds="true" preserveRatio="true" styleClass="cursor-type-hand">
+                              <image>
+                                <Image url="@../images/note.png" />
+                              </image>
+                            </ImageView>
+                          </center>
+                        </BorderPane>
+                        <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                          <bottom>
+                            <Text fx:id="points30" strokeType="OUTSIDE" strokeWidth="0.0" text="100" BorderPane.alignment="CENTER" />
+                          </bottom>
+                          <center>
+                            <ImageView fx:id="note30" fitHeight="76.0" fitWidth="72.0" onMouseClicked="#chooseNote" pickOnBounds="true" preserveRatio="true" styleClass="cursor-type-hand">
+                              <image>
+                                <Image url="@../images/note.png" />
+                              </image>
+                            </ImageView>
+                          </center>
+                        </BorderPane>
+                        <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                          <bottom>
+                            <Text fx:id="points31" strokeType="OUTSIDE" strokeWidth="0.0" text="200" BorderPane.alignment="CENTER" />
+                          </bottom>
+                          <center>
+                            <ImageView fx:id="note31" fitHeight="76.0" fitWidth="72.0" onMouseClicked="#chooseNote" pickOnBounds="true" preserveRatio="true" styleClass="cursor-type-hand">
+                              <image>
+                                <Image url="@../images/note.png" />
+                              </image>
+                            </ImageView>
+                          </center>
+                        </BorderPane>
+                        <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                          <bottom>
+                            <Text fx:id="points32" strokeType="OUTSIDE" strokeWidth="0.0" text="300" BorderPane.alignment="CENTER" />
+                          </bottom>
+                          <center>
+                            <ImageView fx:id="note32" fitHeight="76.0" fitWidth="72.0" onMouseClicked="#chooseNote" pickOnBounds="true" preserveRatio="true" styleClass="cursor-type-hand">
+                              <image>
+                                <Image url="@../images/note.png" />
+                              </image>
+                            </ImageView>
+                          </center>
+                        </BorderPane>
+                        <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="3">
+                          <bottom>
+                            <Text fx:id="points33" strokeType="OUTSIDE" strokeWidth="0.0" text="400" BorderPane.alignment="CENTER" />
+                          </bottom>
+                          <center>
+                            <ImageView fx:id="note33" fitHeight="76.0" fitWidth="72.0" onMouseClicked="#chooseNote" pickOnBounds="true" preserveRatio="true" styleClass="cursor-type-hand">
+                              <image>
+                                <Image url="@../images/note.png" />
+                              </image>
+                            </ImageView>
+                          </center>
+                        </BorderPane>
+                        <BorderPane minHeight="92.0" minWidth="162.0" GridPane.columnIndex="0" GridPane.hgrow="ALWAYS" GridPane.rowIndex="0">
+                          <center>
+                            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="category-table">
+                              <children>
+                                <BorderPane prefHeight="92.0" prefWidth="152.0">
+                                  <center>
+                                    <Text fx:id="category1" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="screen-text-cat" text="Категория 1" textAlignment="CENTER" wrappingWidth="150.0" BorderPane.alignment="CENTER" />
+                                  </center>
+                                </BorderPane>
+                              </children>
+                              <BorderPane.margin>
+                                <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                              </BorderPane.margin>
+                            </Pane>
+                          </center>
+                        </BorderPane>
+                        <BorderPane minHeight="92.0" minWidth="162.0" GridPane.columnIndex="0" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1">
+                          <center>
+                            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="category-table">
+                              <children>
+                                <BorderPane prefHeight="92.0" prefWidth="152.0">
+                                  <center>
+                                    <Text fx:id="category2" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="screen-text-cat" text="Категория 2" textAlignment="CENTER" wrappingWidth="150.0" BorderPane.alignment="CENTER" />
+                                  </center>
+                                </BorderPane>
+                              </children>
+                              <BorderPane.margin>
+                                <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                              </BorderPane.margin>
+                            </Pane>
+                          </center>
+                        </BorderPane>
+                        <BorderPane minHeight="92.0" minWidth="162.0" GridPane.columnIndex="0" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2">
+                          <center>
+                            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="category-table">
+                              <children>
+                                <BorderPane minHeight="92.0" minWidth="152.0">
+                                  <center>
+                                    <Text fx:id="category3" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="screen-text-cat" text="Категория 3" textAlignment="CENTER" wrappingWidth="150.0" BorderPane.alignment="CENTER" />
+                                  </center>
+                                </BorderPane>
+                              </children>
+                              <BorderPane.margin>
+                                <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                              </BorderPane.margin>
+                            </Pane>
+                          </center>
+                        </BorderPane>
+                        <BorderPane minHeight="92.0" minWidth="162.0" GridPane.columnIndex="0" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3">
+                          <center>
+                            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="category-table">
+                              <children>
+                                <BorderPane minHeight="92.0" minWidth="152.0">
+                                  <center>
+                                    <Text fx:id="category4" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="screen-text-cat" text="Категория 4" textAlignment="CENTER" wrappingWidth="150.0" BorderPane.alignment="CENTER" />
+                                  </center>
+                                </BorderPane>
+                              </children>
+                              <BorderPane.margin>
+                                <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                              </BorderPane.margin>
+                            </Pane>
+                          </center>
+                        </BorderPane>
+                      </children>
+                      <columnConstraints>
+                        <ColumnConstraints hgrow="ALWAYS" maxWidth="161.0" minWidth="10.0" prefWidth="161.0" />
+                        <ColumnConstraints hgrow="ALWAYS" maxWidth="117.0" minWidth="10.0" prefWidth="110.0" />
+                        <ColumnConstraints hgrow="ALWAYS" maxWidth="120.0" minWidth="10.0" prefWidth="110.0" />
+                        <ColumnConstraints hgrow="ALWAYS" maxWidth="127.0" minWidth="10.0" prefWidth="108.0" />
+                        <ColumnConstraints hgrow="ALWAYS" maxWidth="109.0" minWidth="10.0" prefWidth="103.0" />
+                      </columnConstraints>
+                      <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      </rowConstraints>
+                      <BorderPane.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                      </BorderPane.margin>
+                    </GridPane>
+                  </top>
+                  <BorderPane.margin>
+                    <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                  </BorderPane.margin>
+                </BorderPane>
+              </center>
+            </BorderPane>
+          </center>
+          <HBox.margin>
+            <Insets right="20.0" />
+          </HBox.margin>
+        </BorderPane>
+      </children>
+    </HBox>
+    <HBox prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+      <children>
+        <BorderPane minWidth="700.0" HBox.hgrow="ALWAYS">
+          <bottom>
+            <Pane minHeight="200.0" minWidth="700.0" prefWidth="718.0" BorderPane.alignment="CENTER">
+              <children>
+                <ImageView fitHeight="160.0" fitWidth="460.0" layoutX="274.0" layoutY="40.0" pickOnBounds="true">
+                  <image>
+                    <Image url="@../images/table.png" />
+                  </image>
+                </ImageView>
+                <Ellipse fill="#ff6433" layoutX="504.0" layoutY="110.0" radiusX="56.0" radiusY="33.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" />
+                <Ellipse id="btn" fx:id="btnPlayer"  onMouseClicked="#clickAnswerButton" fill="#ff3d00" layoutX="504.0" layoutY="100.0" radiusX="56.0" radiusY="33.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5"  styleClass="cursor-type-hand" />
+              </children>
+            </Pane>
+          </bottom>
+        </BorderPane>
+        <BorderPane minHeight="200.0" minWidth="250.0" HBox.hgrow="ALWAYS" HBox.margin="$x1">
+          <bottom>
+            <Pane id="resultsPane" minHeight="180.0" minWidth="200.0" BorderPane.alignment="CENTER">
+              <children>
+                <BorderPane minHeight="160.0" minWidth="270.0" styleClass="result-pane">
+                  <center>
+                    <VBox minHeight="130.0" minWidth="270.0" prefHeight="130.0" prefWidth="270.0">
+                      <children>
+                        <Pane prefHeight="200.0" prefWidth="200.0" VBox.vgrow="NEVER">
+                          <children>
+                            <BorderPane prefHeight="49.0" prefWidth="271.0">
+                              <center>
+                                <Text fx:id="playerName1" strokeType="OUTSIDE" strokeWidth="0.0" text="Игрок 1:" BorderPane.alignment="CENTER">
+                                  <fill>
+                                    <Color blue="0.768" green="0.000" red="0.800" fx:id="x3" />
+                                  </fill>
+                                  <font>
+                                    <Font size="22.0" fx:id="x2" />
+                                  </font>
+                                </Text>
+                              </center>
+                              <right>
+                                <Text fx:id="playerScore1" font="$x2" strokeType="OUTSIDE" strokeWidth="0.0" text="0" BorderPane.alignment="CENTER">
+                                  <fill>
+                                    <Color blue="0.384" green="0.000" red="0.800" fx:id="x4" />
+                                  </fill>
+                                  <BorderPane.margin>
+                                    <Insets right="20.0" />
+                                  </BorderPane.margin>
+                                </Text>
+                              </right>
+                            </BorderPane>
+                          </children>
+                        </Pane>
+                        <Pane prefHeight="200.0" prefWidth="200.0" VBox.vgrow="NEVER">
+                          <children>
+                            <BorderPane layoutY="-2.0" prefHeight="49.0" prefWidth="271.0">
+                              <center>
+                                <Text fx:id="playerName2" fill="$x3" font="$x2" strokeType="OUTSIDE" strokeWidth="0.0" text="Игрок 2:" BorderPane.alignment="CENTER" />
+                              </center>
+                              <right>
+                                <Text fx:id="playerScore2" fill="$x4" font="$x2" strokeType="OUTSIDE" strokeWidth="0.0" text="0" BorderPane.alignment="CENTER">
+                                  <BorderPane.margin>
+                                    <Insets right="20.0" />
+                                  </BorderPane.margin>
+                                </Text>
+                              </right>
+                            </BorderPane>
+                          </children>
+                        </Pane>
+                        <Pane prefHeight="200.0" prefWidth="200.0" VBox.vgrow="NEVER">
+                          <children>
+                            <BorderPane layoutY="-2.0" prefHeight="49.0" prefWidth="271.0">
+                              <center>
+                                <Text fx:id="playerName3" fill="$x3" font="$x2" strokeType="OUTSIDE" strokeWidth="0.0" text="Игрок 3:" BorderPane.alignment="CENTER" />
+                              </center>
+                              <right>
+                                <Text fx:id="playerScore3" fill="$x4" font="$x2" strokeType="OUTSIDE" strokeWidth="0.0" text="0" BorderPane.alignment="CENTER">
+                                  <BorderPane.margin>
+                                    <Insets right="20.0" />
+                                  </BorderPane.margin>
+                                </Text>
+                              </right>
+                            </BorderPane>
+                          </children>
+                        </Pane>
+                      </children>
+                      <BorderPane.margin>
+                        <Insets top="10.0" fx:id="x5" />
+                      </BorderPane.margin>
+                    </VBox>
+                  </center>
+                  <top>
+                    <Text fill="#990093" strokeType="OUTSIDE" strokeWidth="0.0" text="Результаты:" BorderPane.alignment="CENTER" BorderPane.margin="$x5">
+                      <font>
+                        <Font size="24.0" />
+                      </font>
+                    </Text>
+                  </top>
+                </BorderPane>
+              </children>
+              <BorderPane.margin>
+                <Insets fx:id="x1" />
+              </BorderPane.margin>
+            </Pane>
+          </bottom>
+        </BorderPane>
+      </children>
+    </HBox>
+  </VBox>
+  <stylesheets>
+    <URL value="@../css/style.css" />
+  </stylesheets>
+</AnchorPane>

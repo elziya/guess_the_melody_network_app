@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane
+        fx:id="anchorPane"
+        styleClass="main-theme"
+        stylesheets="@../css/project.css"
+        xmlns="http://javafx.com/javafx/8"
+        xmlns:fx="http://javafx.com/fxml/1"
+        fx:controller="ru.kpfu.itis.controllers.LoadController">
+    <children>
+        <VBox alignment="CENTER"
+              AnchorPane.bottomAnchor="0.0"
+              AnchorPane.leftAnchor="0.0"
+              AnchorPane.rightAnchor="0.0"
+              AnchorPane.topAnchor="0.0">
+            <VBox.margin>
+                <Insets bottom="50.0"
+                        left="50.0"
+                        right="50.0"
+                        top="50.0"/>
+            </VBox.margin>
+            <Text fx:id="loadText" strokeType="OUTSIDE"
+                  strokeWidth="0.0"
+                  styleClass="header-text-theme"
+                  text="Ожидание соперников"
+                  textAlignment="CENTER"
+                  wrappingWidth="500.0">
+                <VBox.margin>
+                    <Insets left="50.0"
+                            right="50.0"
+                            top="10.0"/>
+                </VBox.margin>
+            </Text>
+
+            <HBox alignment="CENTER"
+                  maxWidth="-Infinity"
+                  minHeight="-Infinity"
+                  minWidth="-Infinity"
+                  prefHeight="123.0"
+                  prefWidth="261.0"
+                  BorderPane.alignment="CENTER">
+                <VBox.margin>
+                    <Insets bottom="50.0"
+                            top="50.0"/>
+                </VBox.margin>
+                <ProgressIndicator fx:id="progressIndicator"
+                                   id="progress-indicator"
+                                   prefHeight="65.0"
+                                   prefWidth="70.0"/>
+            </HBox>
+        </VBox>
+    </children>
+
+</AnchorPane>
+

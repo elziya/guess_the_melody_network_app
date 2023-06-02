@@ -1,0 +1,94 @@
+@font-face {
+    -fx-font-family: 'Comfortaa';
+    src: url("/fonts/Comfortaa-VariableFont_wght.ttf");
+}
+
+.main-scene {
+    -fx-background-color: radial-gradient(focus-distance 0% , center 50% 50% , radius 50% , #c96850, #950376);
+}
+
+.content-pane-border {
+    -fx-background-color: #FFBF00;
+    -fx-background-radius: 50px;
+    -fx-border-radius: 50px;
+    -fx-border-color: #44101f;
+    -fx-border-width: 1px;
+}
+
+.content-pane {
+    -fx-background-color: #FFF778;
+    -fx-background-radius: 50px;
+    -fx-border-radius: 50px;
+    -fx-border-color: #44101f;
+    -fx-border-width: 1px;
+}
+
+.button-up {
+    -fx-background-color: linear-gradient(to top, #cf3821, #fb452b);
+}
+
+.button_down {
+    -fx-background-color: #ff9d4b;
+}
+
+.category-table {
+    -fx-background-color: #62c270;
+    -fx-background-radius: 20px;
+}
+
+.screen-text-cat {
+    -fx-font-family: "Comfortaa";
+    -fx-font-size: 16;
+}
+
+.screen-text-note {
+    -fx-font-family: "Comfortaa";
+    -fx-font-size: 16;
+}
+
+.answer-content-pane {
+    -fx-background-color: #eae4b4;
+    -fx-box-sizing: border-box;
+    -fx-background-radius: 50px;
+    -fx-border-radius: 50px;
+    -fx-border-color: #44101f;
+    -fx-border-width: 1px;
+}
+
+.answer-content-pane-border {
+    -fx-background-color: #FFBF00;
+}
+
+.cursor-type-hand{
+    -fx-cursor: hand;
+}
+
+.button-background{
+    -fx-background-color: #da81ab;
+    -fx-background-radius: 50px;
+    -fx-border-radius: 50px;
+}
+
+.button-content{
+    -fx-background-color: #e4b0bd;
+    -fx-background-radius: 50px;
+    -fx-border-radius: 50px;
+    -fx-font-size: 24;
+    -fx-font-family: "Comfortaa";
+}
+
+.answer-title-text{
+    -fx-font-size: 48;
+    -fx-font-family: "Comfortaa";
+}
+
+.answer-time-text{
+    -fx-font-size: 36;
+    -fx-font-family: "Comfortaa";
+}
+
+.result-pane {
+    -fx-font-size: 22;
+    -fx-font-family: "Comfortaa";
+    -fx-background-color: #EAE4B4;
+}
